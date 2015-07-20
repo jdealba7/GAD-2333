@@ -1,0 +1,25 @@
+using UnityEngine;
+using System.Collections;
+
+public class Position : MonoBehaviour 
+{
+	//public Vector3 position;
+
+
+	// Use this for initialization
+	void Start () 
+	{
+		GameObject myCapsule01 = GameObject.Find ("Capsule01");
+		Transform myCapsule01Transform = myCapsule01.transform;
+		Vector3 position = myCapsule01Transform.position;
+
+		print ("My Capsule01 is at " + position);
+		print (" The x-coordinate is at " + position.x);
+	}
+	
+	// Update is called once per frame
+	void Update () 
+	{
+	
+	}
+}
