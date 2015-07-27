@@ -1,0 +1,31 @@
+using UnityEngine;
+using System.Collections;
+
+public class HelloWorld : MonoBehaviour {
+	
+		public string name = ("");
+		
+		// Use this for initialization
+		void Start ()
+		{
+		}
+		
+		public void Main()
+		{
+			SayHello(name);
+			SayGoodbye();
+		}
+		
+		public void SayHello(string x)
+		{
+			print ("Hello " + x + "!");
+		}
+		public void SayGoodbye()
+		{
+			print ("Goodbye!");
+		}
+		// Update is called once per frame
+		void Update () {
+			
+		}
+	}
